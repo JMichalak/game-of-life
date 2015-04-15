@@ -17,8 +17,8 @@ import org.openqa.selenium.WebDriver;
 @RunWith(ThucydidesRunner.class)
 @WithTag("Starting a new simulation")
 public class WhenTheUserEntersAnInitialGrid {
-
-    @Managed(uniqueSession = true)
+//cos
+     @Managed(uniqueSession = true)
     WebDriver driver;
 
     @ManagedPages(defaultUrl = "http://localhost:9090")
