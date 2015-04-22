@@ -19,8 +19,8 @@ import org.openqa.selenium.WebDriver;
 public class WhenTheUserEntersAnInitialGrid {
 //cos
      @Managed(uniqueSession = true)
-    WebDriver drive
-    psuje_test
+    WebDriver drive;
+   
     @ManagedPages(defaultUrl = "http://localhost:9090")
     public Pages pages;
 
@@ -36,7 +36,7 @@ public class WhenTheUserEntersAnInitialGrid {
 
     @Test
     public void userShouldBeAbleChooseToCreateANewGameOnTheHomePage() {
-        player.opens_home_page()
+        player.opens_home_page();
         player.chooses_to_start_a_new_game();
         player.should_see_a_page_containing_text("Please seed your universe");
 
