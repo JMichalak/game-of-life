@@ -20,7 +20,7 @@ public class WhenTheUserEntersAnInitialGrid {
 //cos
      @Managed(uniqueSession = true)
     WebDriver driver;
-
+    psuje_test
     @ManagedPages(defaultUrl = "http://localhost:9090")
     public Pages pages;
 
