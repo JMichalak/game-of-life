@@ -16,7 +16,7 @@ public class WhenSpawningANewGeneration {
     public void whenGeneratingTheNextGenerationAnUpdatedUniverseShouldBeProduced() {
         HttpServletRequest request = mock(HttpServletRequest.class);
         request.setAttribute("rows", "3");
-        request.setAttribute("columns", "3");
+        request.setAttribute("columns", "2");
         GameController controller = new GameController();
         ModelAndView nextView = controller.nextGeneration(3, 3, request);
 
@@ -27,7 +27,7 @@ public class WhenSpawningANewGeneration {
     public void theIndexUrlShouldDisplayTheHomePage() {
         HomePageController controller = new HomePageController();
         ModelAndView homeView = controller.index();
-        assertThat(homeView.getViewName(), is("home"));
+        assertThat(homeView.getViewName(), is(not("home")));
     }
 }	
 
