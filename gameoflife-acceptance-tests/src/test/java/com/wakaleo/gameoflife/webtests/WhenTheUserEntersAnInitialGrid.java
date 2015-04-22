@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 public class WhenTheUserEntersAnInitialGrid {
 //cos
      @Managed(uniqueSession = true)
-    WebDriver driver;
+    WebDriver drive
     psuje_test
     @ManagedPages(defaultUrl = "http://localhost:9090")
     public Pages pages;
