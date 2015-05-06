@@ -17,7 +17,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(ThucydidesRunner.class)
 @WithTag("Starting a new simulation")
 public class WhenTheUserEntersAnInitialGrid {
-//cos
+//cossadasd
      @Managed(uniqueSession = true)
     WebDriver drive;
    
