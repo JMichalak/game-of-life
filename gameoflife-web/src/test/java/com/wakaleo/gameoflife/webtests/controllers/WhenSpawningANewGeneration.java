@@ -16,7 +16,7 @@ public class WhenSpawningANewGeneration {
     public void whenGeneratingTheNextGenerationAnUpdatedUniverseShouldBeProduced() {
         HttpServletRequest request = mock(HttpServletRequest.class);
         request.setAttribute("rows", "3");
-        request.setAttribute("columns", "2");
+        request.setAttribute("columns", "3");
         GameController controller = new GameController();
         ModelAndView nextView = controller.nextGeneration(3, 3, request);
 
